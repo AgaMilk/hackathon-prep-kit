@@ -1,0 +1,4 @@
+# Preserve snapshot bytes regardless of the user's core.autocrlf setting.
+/references/** -text
+# Superpowers' original nested attributes take precedence for its text files.
+# Those files are already LF-only; its text eol=lf rules preserve their bytes.

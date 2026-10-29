@@ -1,0 +1,49 @@
+# Publish only the reviewed kit files and source snapshots.
+/*
+!/AGENTS.md
+!/README.md
+!/SOURCES.md
+!/.gitignore
+!/.gitattributes
+!/prompts/
+!/references/
+
+# Local acquisition data and exercise projects are never publication inputs.
+/.acquisition/
+/round-01/
+/round-01*/
+
+# Keep credentials, local logs, caches and backups out of authored prompts.
+# Root files outside the allowlist are already excluded above.
+/prompts/**/.env
+/prompts/**/.env.*
+/prompts/**/.netrc
+/prompts/**/.npmrc
+/prompts/**/.pypirc
+/prompts/**/.git-credentials
+/prompts/**/credentials*
+/prompts/**/secrets*
+/prompts/**/*.pem
+/prompts/**/*.key
+/prompts/**/*.p12
+/prompts/**/*.pfx
+/prompts/**/id_rsa*
+/prompts/**/id_ed25519*
+/prompts/**/*.log
+/prompts/**/logs/
+/prompts/**/tmp/
+/prompts/**/temp/
+/prompts/**/__pycache__/
+/prompts/**/*.pyc
+/prompts/**/*.tmp
+/prompts/**/*.temp
+/prompts/**/*.bak
+/prompts/**/*.backup
+/prompts/**/*~
+/prompts/**/*.swp
+/prompts/**/*.swo
+/prompts/**/.DS_Store
+/prompts/**/Thumbs.db
+
+# Preserve every original reference, including dotfiles and LICENSE files.
+!/references/**
